@@ -73,7 +73,7 @@ public class Register extends AppCompatActivity {
 
         if (fauth.getCurrentUser() != null)
         {
-            startActivity(new Intent(getApplicationContext(), Manifest.class));
+            startActivity(new Intent(getApplicationContext(), Login.class));
             finish();
         }
 
@@ -98,7 +98,7 @@ public class Register extends AppCompatActivity {
                 final String phone = mPhone.getText().toString();
 
 
-                if (TextUtils.isEmpty(email)
+                if (TextUtils.isEmpty(email))
                 {
                     mEmail.setError("Email is Required");
                     return;
